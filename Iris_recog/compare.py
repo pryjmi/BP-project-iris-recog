@@ -1,13 +1,6 @@
 import cv2
 import os
 
-"""
-path1 = 'saved_eyes'
-path2 = 'new_eyes'
-dir_list_saved = os.listdir(path1)
-dir_list_new = os.listdir(path2)
-"""
-
 height = 500
 width = 500
 size = (width, height)
@@ -32,6 +25,13 @@ similarity_l = (1 - errorL2_l/(height * width))*100
 similarity_r = (1 - errorL2_r/(height * width))*100
 print("Similarity of left eyes: ", similarity_l, "%")
 print("Similarity of right eyes: ", similarity_r, "%")
+
+"""
+path1 = 'saved_eyes'
+path2 = 'new_eyes'
+dir_list_saved = os.listdir(path1)
+dir_list_new = os.listdir(path2)
+"""
 
 """
 for x in dir_list_saved:
